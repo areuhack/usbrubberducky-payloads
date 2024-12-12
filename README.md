@@ -1,4 +1,5 @@
 🎯 Rubber Ducky Scripts Repository 🖥️📱🐧🍎
+
 🚀 Your one-stop destination for advanced Rubber Ducky payloads tailored for Windows, iOS, Android, Linux, and macOS. Perfect for penetration testers, ethical hackers, and security enthusiasts!
 
 🌟 Features
