@@ -1,3 +1,8 @@
+REM Description:   Bypass Windows Defender and Execute Shell from an external server
+REM Author:        areuhack
+REM Version:       1.0
+REM Target:        Windows 11
+REM Attackmodes:   HID
 DELAY 1000
 GUI r
 DELAY 500
